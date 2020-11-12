@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/storeListFragments">
+
+    <fragment
+        android:id="@+id/storeListFragments"
+        android:name="com.marcelle.ca1_19534.screens.storelist.StoreListFragments"
+        android:label="StoreListFragments" >
+        <action
+            android:id="@+id/action_storeListFragments_to_shoppingCartFragments"
+            app:destination="@id/shoppingCartFragments" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoppingCartFragments"
+        android:name="com.marcelle.ca1_19534.screens.shoppingcart.ShoppingCartFragments"
+        android:label="ShoppingCartFragments" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.marcelle.ca1_19534.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+</navigation>
